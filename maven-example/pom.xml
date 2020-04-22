@@ -28,9 +28,9 @@
         </dependency>
         
         <dependency>
-            <groupId>javancss</groupId>
-            <artifactId>jhbasic</artifactId>
-            <version>29.50</version>
+            <groupId>javazoom</groupId>
+            <artifactId>jlayer</artifactId>
+            <version>1.0.1</version>
         </dependency>
         
         <dependency>
