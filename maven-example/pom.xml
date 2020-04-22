@@ -27,12 +27,7 @@
             <scope>test</scope>
         </dependency>
         
-        <dependency>
-            <groupId>javaconfig</groupId>
-            <artifactId>javaconfig</artifactId>
-            <version>1.4</version>
-        </dependency>
-    </dependencies>
+   </dependencies>
 
     <build>
         <pluginManagement>
