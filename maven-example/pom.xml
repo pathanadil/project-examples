@@ -26,6 +26,12 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        
+         <dependency>
+            <groupId>jgraph</groupId>
+            <artifactId>jgraph</artifactId>
+            <version>5.5.1</version>
+        </dependency>
     </dependencies>
 
     <build>
