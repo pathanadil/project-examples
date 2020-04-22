@@ -28,9 +28,9 @@
         </dependency>
         
         <dependency>
-            <groupId>javazoom</groupId>
-            <artifactId>jlayer</artifactId>
-            <version>1.0.1</version>
+            <groupId>javacc</groupId>
+            <artifactId>javacc</artifactId>
+            <version>4.1</version>
         </dependency>
         
         <dependency>
