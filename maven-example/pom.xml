@@ -28,9 +28,9 @@
         </dependency>
         
         <dependency>
-            <groupId>javacc</groupId>
-            <artifactId>javacc</artifactId>
-            <version>4.1</version>
+            <groupId>jgraph</groupId>
+            <artifactId>jgraph</artifactId>
+            <version>5.5.1</version>
         </dependency>
         
         <dependency>
