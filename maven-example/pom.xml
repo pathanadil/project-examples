@@ -33,9 +33,9 @@
             <version>5.5.1</version>
         </dependency>
         <dependency>
-            <groupId>jmdns</groupId>
-            <artifactId>jmdns</artifactId>
-            <version>1.0</version>
+            <groupId>jmock</groupId>
+            <artifactId>jmock</artifactId>
+            <version>1.2.0</version>
         </dependency>
     </dependencies>
 
