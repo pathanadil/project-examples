@@ -75,7 +75,11 @@
             <artifactId>spring-aop</artifactId>
             <version>2.5.6</version>
         </dependency>
-
+        <dependency>
+            <groupId>rome</groupId>
+            <artifactId>rome</artifactId>
+            <version>1.0</version>
+        </dependency>
         <!-- dependency with classifier -->
         <dependency>
             <groupId>org.testng</groupId>
