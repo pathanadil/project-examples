@@ -46,9 +46,9 @@
         </dependency>
         
           <dependency>
-            <groupId>ren.crux</groupId>
-            <artifactId>crux</artifactId>
-            <version>0.0.3</version>
+            <groupId>saxon</groupId>
+            <artifactId>saxon</artifactId>
+            <version>8.7</version>
         </dependency>
  
   </dependencies>
