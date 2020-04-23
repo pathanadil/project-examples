@@ -44,6 +44,12 @@
             <artifactId>rome</artifactId>
             <version>1.0</version>
         </dependency>
+        
+          <dependency>
+            <groupId>ren.crux</groupId>
+            <artifactId>crux</artifactId>
+            <version>0.0.3</version>
+        </dependency>
  
   </dependencies>
 
