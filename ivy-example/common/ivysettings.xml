@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-settings>
+  <settings defaultResolver="main" />
+  <!--Authentication required for publishing (deployment). 'Artifactory Realm' is the realm used by Artifactory so don't change it.-->
+  <credentials host="localhost" realm="Artifactory Realm" username="admin" passwd="password" />
   <resolvers>
-    <ibiblio name="public" m2compatible="true" root="https://jfrogtest0001.jfrog.io/mvn-remote" />
+    <chain name="main">
+      <filesystem name="local" checkmodified="true" validate="true">
+        <ivy pattern="${ivy.settings.dir}/../repository/[module]-ivy-[revision].xml"/>
+        <artifact pattern="${ivy.settings.dir}/../repository/[module]-[revision].[ext]"/>
+      </filesystem>
+      <ibiblio name="public" m2compatible="true" root="https://jfrogtest0001.jfrog.io/artifactory/ivy-remote" />
+      <url name="artifactory" m2compatible="false">
+        <ivy pattern="https://jfrogtest0001.jfrog.io/artifactory/ivy-local/[organization]/[module]/[revision]/[type]s/ivy-[revision].xml" />
+	<artifact pattern="https://jfrogtest0001.jfrog.io/artifactory/ivy-local/[organization]/[module]/[revision]/[type]s/[module](-[classifier])-[revision].[ext]" />
+      </url>
+    </chain>
   </resolvers>
 </ivy-settings>
