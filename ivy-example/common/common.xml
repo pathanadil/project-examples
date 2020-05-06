@@ -74,7 +74,16 @@
    	<!-- here is how we would have configured ivy if we had our own ivysettings file -->
     <ivy:settings file="${common.dir}/ivysettings.xml" />
     
-
+         <!-- ================================= 
+          target: resolve              
+         ================================= -->
+    <target name="resolve" depends="clean-lib, load-ivy" description="--> resolve and retrieve dependencies with ivy">
+        <mkdir dir="${lib.dir}"/> <!-- not usually necessary, ivy creates the directory IF there are dependencies -->
+    	
+    	<!-- the call to resolve is not mandatory, retrieve makes an implicit call if we don't -->
+    	<ivy:resolve file="${ivy.file}"/>
+    	<ivy:retrieve pattern="${lib.dir}/[artifact].[ext]" />
+    </target>
 	
      <!-- ================================= 
           target: report              
