@@ -76,9 +76,7 @@
     
 
 	
-    <!-- ================================= 
-
-    <!-- ================================= 
+     <!-- ================================= 
           target: report              
          ================================= -->
     <target name="report" depends="resolve" description="--> generates a report of dependencies">
