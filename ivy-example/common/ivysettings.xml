@@ -5,10 +5,10 @@
   <credentials host="localhost" realm="Artifactory Realm" username="admin" passwd="password" />
   <resolvers>
     <chain name="main">
-      /*<filesystem name="local" checkmodified="true" validate="true">
+      <filesystem name="local" checkmodified="true" validate="true">
         <ivy pattern="${ivy.settings.dir}/../repository/[module]-ivy-[revision].xml"/>
         <artifact pattern="${ivy.settings.dir}/../repository/[module]-[revision].[ext]"/>
-      */</filesystem>
+      </filesystem>
       <ibiblio name="public" m2compatible="true" root="https://jfrogtest564.jfrog.io/artifactory/ivy-local" />
       <url name="artifactory" m2compatible="false">
         <ivy pattern="https://jfrogtest564.jfrog.io/artifactory/ivy-remote/[organization]/[module]/[revision]/[type]s/ivy-[revision].xml" />
