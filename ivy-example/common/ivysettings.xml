@@ -2,17 +2,17 @@
 <ivy-settings>
   <settings defaultResolver="main" />
   <!--Authentication required for publishing (deployment). 'Artifactory Realm' is the realm used by Artifactory so don't change it.-->
-  <credentials host="https://jfrogtest564.jfrog.io/artifactory" username="admin" passwd="1qaz1!QAZ" />
+  <credentials host="localhost" realm="Artifactory Realm" username="admin" passwd="password" />
   <resolvers>
     <chain name="main">
       <filesystem name="local" checkmodified="true" validate="true">
         <ivy pattern="${ivy.settings.dir}/../repository/[module]-ivy-[revision].xml"/>
         <artifact pattern="${ivy.settings.dir}/../repository/[module]-[revision].[ext]"/>
       </filesystem>
-      <ibiblio name="public" m2compatible="true" root="https://jfrogtest564.jfrog.io/artifactory/libs-release" />
+      <ibiblio name="public" m2compatible="true" root="https://jfrogtest564.jfrog.io/artifactory/ivy-local" />
       <url name="artifactory" m2compatible="false">
-        <ivy pattern="https://jfrogtest564.jfrog.io/artifactory/ivy-local/[organization]/[module]/[revision]/[type]s/ivy-[revision].xml" />
-	<artifact pattern="https://jfrogtest564.jfrog.io/artifactory/ivy-local/[organization]/[module]/[revision]/[type]s/[module](-[classifier])-[revision].[ext]" />
+        <ivy pattern="https://jfrogtest564.jfrog.io/artifactory/ivy-remote/[organization]/[module]/[revision]/[type]s/ivy-[revision].xml" />
+	<artifact pattern="https://jfrogtest564.jfrog.io/artifactory/ivy-remote/[organization]/[module]/[revision]/[type]s/[module](-[classifier])-[revision].[ext]" />
       </url>
     </chain>
   </resolvers>
