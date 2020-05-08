@@ -177,7 +177,7 @@
          ================================= -->
     <target name="publish-local" depends="local-version, jar" description="--> publish this project in the local ivy repository">
     	<ivy:publish artifactspattern="${build.dir}/[artifact].[ext]" 
-    			        resolver="local"
+    			        resolver="public"
     			        pubrevision="${version}"
 				        pubdate="${now}"
     			        status="integration"
