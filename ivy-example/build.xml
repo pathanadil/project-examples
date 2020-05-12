@@ -49,6 +49,12 @@
       <fileset dir="projects" includes="**/build.xml"/>
     </ivy:buildlist>
   </target>
+
+    <target name="publish" depends="deliver">
+        <ivy:publish resolver="artifactory"
+                     artifactspattern="distrib/[artifact]-[revision].[ext]"
+                     pubrevision="1.1b4"/>
+    </target>
   
   <!--Publish release version--> 
   <target name="publish-release" depends="buildlist" 
