@@ -9,7 +9,7 @@
         <ivy pattern="${ivy.settings.dir}/../repository/[module]-ivy-[revision].xml"/>
         <artifact pattern="${ivy.settings.dir}/../repository/[module]-[revision].[ext]"/>
       </filesystem>
-      <ibiblio name="public" m2compatible="true" root="https://jfrogtest564.jfrog.io/artifactory/mvn-local" />
+      <ibiblio name="public" m2compatible="true" root="https://jfrogtest564.jfrog.io/artifactory/mvn-remote" />
       <url name="artifactory" m2compatible="false">
         <ivy pattern="https://jfrogtest564.jfrog.io/artifactory/mvn-local/[organization]/[module]/[revision]/[type]s/ivy-[revision].xml" />
 	<artifact pattern="https://jfrogtest564.jfrog.io/artifactory/mvn-local/[organization]/[module]/[revision]/[type]s/[module](-[classifier])-[revision].[ext]" />
