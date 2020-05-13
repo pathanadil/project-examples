@@ -2,7 +2,7 @@
 <ivy-settings>
   <settings defaultResolver="main" />
   <!--Authentication required for publishing (deployment). 'Artifactory Realm' is the realm used by Artifactory so don't change it.-->
-  <credentials host="https://jfrogtest564.jfrog.io" realm="Artifactory Realm" username="admin" passwd="1qaz1!QAZ"/>
+  <credentials host="localhost" realm="Artifactory Realm" username="admin" passwd="password" />
   <resolvers>
     <chain name="main">
       <filesystem name="local" checkmodified="true" validate="true">
